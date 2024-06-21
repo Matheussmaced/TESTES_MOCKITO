@@ -14,10 +14,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class ServicoEnvioEmailTeste {
 
   @Mock
-  private PlataformaDeEnvio plataforma;
+  private PlataformaDeEnvio plataforma; // mockando oq vai receber
 
   @InjectMocks
-  private ServicoEnvioEmail servico;
+  private ServicoEnvioEmail servico; // injebtando informações
 
   @Captor
   private ArgumentCaptor<Email> emailCaptor;
